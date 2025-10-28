@@ -382,32 +382,35 @@ Test your knowledge with these common interview questions for DevOps, SRE, and C
 
 1. **What is the Linux kernel, and how does it differ from a Linux distribution?**  
    (Hint: Focus on the kernel's role in hardware management vs. the distro's addition of user tools.)
+   
    Ans: **Linux Kernel** is the manager of the hotel. It manages the processes, memory, devices, files, security and permissions. 
        **Linux Distribution** is nothing but the whole hotel.It includes the kernel, the user space tools(sudo, ls), package manager(yum, apt), aplications. 
 
-2. **Explain kernel space vs. user space. Why is this separation important for system security and stability?**  
+3. **Explain kernel space vs. user space. Why is this separation important for system security and stability?**  
    (Hint: Discuss system calls and real-world implications like container isolation.)
+   
    Ans: **Kernel space** is the backend and user sace is the frontend. So basically kernel space has unrestricted access to all the system resorces such as hardware and software. But **user space** has limited access to the users and aplications. The applications do not have direct access to s/w and h/w resources. The separation is important for the data security. Let someone is trying to hack the system and there is no separation between user spcae and kernel space. Then the hacker will easily reach out to the kernel space where he will get the direct control of CPU, memory, I/O device. So the separation is required.
 
-3. **Name three popular Linux distributions and their typical use cases in a cloud environment.**  
+5. **Name three popular Linux distributions and their typical use cases in a cloud environment.**  
    (Hint: Mention Ubuntu Server for general cloud, Alpine for containers, RHEL for enterprise.)
+   
    Ans: Ubuntu- general purpose,
         Amazon Linux- Aws cloud environment.
         RHEL- enterprise cloud infrastructures and hybrid environments.
 
-4. **How do package managers like apt and yum work? Why are they essential for DevOps workflows?**  
+7. **How do package managers like apt and yum work? Why are they essential for DevOps workflows?**  
    (Hint: Cover repositories, dependency resolution, and automation benefits.)
 
-5. **What is the role of the GNU Project in Linux? Why is the full name often "GNU/Linux"?**  
+8. **What is the role of the GNU Project in Linux? Why is the full name often "GNU/Linux"?**  
    (Hint: Explain userland tools like bash and ls.)
 
-6. **Describe the open-source philosophy and how it benefits companies like AWS in their use of Linux.**  
+9. **Describe the open-source philosophy and how it benefits companies like AWS in their use of Linux.**  
    (Hint: Highlight freedom, collaboration, and transparency.)
 
-7. **In a production SRE role, why might you prefer Linux over Windows for server infrastructure?**  
+10. **In a production SRE role, why might you prefer Linux over Windows for server infrastructure?**  
    (Hint: Reference stability, cost, and scalability from the comparison table.)
 
-8. **How would you check the kernel version on a Linux instance, and why might a cloud provider use an older version?**  
+11. **How would you check the kernel version on a Linux instance, and why might a cloud provider use an older version?**  
    (Hint: Use `uname -r` and discuss stability/testing.)
 
 Practice answering these aloud or in writing—great for interview prep!
